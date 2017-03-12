@@ -1,0 +1,33 @@
+New log file opened at Sat Feb 25 22:27:16 IST 2017 by 13409@lakshmi-Lenovo-G500s
+Taking next connection to: 38521
+New client attempting to connect on port: 47043-38521
+  Address = /127.0.1.1:38521
+This client on port 47043 has uuid 69da9708-76b2-4555-aaa3-bf19250e5037 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-69da9708-76b2-4555-aaa3-bf19250e5037
+Taking next connection to: 38521
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 38521
+New client attempting to connect on port: 47063-38521
+  Address = /127.0.1.1:38521
+Handshake exception on socket: 47063
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 38521
+New client attempting to connect on port: 47064-38521
+  Address = /127.0.1.1:38521
+This client on port 47064 has uuid 6cac78e5-4d58-450e-857a-66063a4dc33b configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-6cac78e5-4d58-450e-857a-66063a4dc33b
+Taking next connection to: 38521
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
