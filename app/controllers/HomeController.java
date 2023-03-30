@@ -37,5 +37,11 @@ public class HomeController extends Controller {
           mailerClient.send(email);*/
           return ok(index.render("Your new application is ready."));
     }
+	
+	public Result getUsers(){
+		List<AppUser> appUsers = new ArrayList<AppUser>();
+		appUsers.stream().filter(user -> user.role.equals("EMPLOYEE")).collect(Collectors.toList());
+		return ok(index.render("Your new application is ready."));	
+	}
 
 }
