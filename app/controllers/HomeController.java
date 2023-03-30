@@ -17,24 +17,7 @@ public class HomeController extends Controller {
      */
 	//@Inject MailerPlugin mailerClient;
     public Result index() {
-       
-        
-/*
-          String cid = "1234";
-          Email email = new Email();
-          email.setSubject("Simple email");
-          email.setFrom("Mister FROM <lakshmi@thrymr.net>");
-          email.addTo("Miss TO <lakshmi@thrymr.net>");
-            // adds attachment
-        //  email.addAttachment("attachment.pdf", new File("/some/path/attachment.pdf"));
-            // adds inline attachment from byte array
-         // email.addAttachment("data.txt", "data".getBytes(), "text/plain", "Simple data", EmailAttachment.INLINE);
-            // adds cid attachment
-        //  email.addAttachment("image.jpg", new File("/some/path/image.jpg"), cid);
-            // sends text, HTML or both...
-          email.setBodyText("A text message");
-          email.setBodyHtml("<html><body><p>An <b>html</b> message with cid <img src=\"cid:" + cid + "\"></p></body></html>");
-          mailerClient.send(email);*/
+ 
           return ok(index.render("Your new application is ready."));
     }
 
